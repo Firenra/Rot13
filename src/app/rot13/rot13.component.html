@@ -1,0 +1,25 @@
+<div class="text-center">
+    <p></p>
+    <h1> Bienvenue sur votre site pour déchiffrer et/ou chiffrer un texte en ROT13</h1>
+    <p></p>
+
+
+    <label for="rot13" class="form-label">Veuillez entrer le texte à chiffrer ou à déchiffrer :</label>
+    <textarea class="form-control" id="rot13" rows="3" [(ngModel)]="valueEnter"></textarea>
+    <p></p>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit" (click)="validate()">Chiffrer/Déchiffrer</button>
+    </div>
+    <p></p>
+    <div class="alert alert-warning" role="alert">
+        Attention ! Avec le chiffrement ROT13 : seulement les lettres seront déchiffrer/chiffrer
+    </div>
+
+
+    <p></p>
+    <div class="mb-3">
+        <label for="Answer" class="form-label">Votre texte chiffré ou déchiffré :</label>
+        <textarea class="form-control" id="rot13" rows="3" placeholder="{{valueAnswer}}" disabled></textarea>
+    </div>
+
+</div>
